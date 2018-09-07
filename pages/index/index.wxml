@@ -16,7 +16,7 @@
     <text wx:if="{{latitude}}">当前经度:{{latitude}},当前纬度:{{atitude}}</text>
     <map latitude='{{latitude}}' longitude='{{atitude}}'></map>
   </view>
-  <view class="usermotto">
+  <view >
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>

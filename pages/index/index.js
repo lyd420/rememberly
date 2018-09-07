@@ -51,6 +51,18 @@ Page({
       hasUserInfo: true
     })
   },
+  onPullDownRefresh: function () {
+    // Do something when pull down.
+    this.setData({
+      motto:"new world"
+    })
+  },
+  onReachBottom: function () {
+    // Do something when page reach bottom.
+    this.setData({
+      motto:"reach the bottom"
+    })
+  },
   scanCode : function(e) {
     wx.scanCode({
       success: (res)=>{
