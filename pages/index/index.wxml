@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view>
+    <button bindtap='scanCode'>扫码</button>
+    <text>{{scanResult.result}}</text>
+  </view>
+  <view>
+    <button bindtap='getCurrentLocation'>获取位置</button>
+    <text wx:if="{{latitude}}">当前经度:{{latitude}},当前纬度:{{atitude}}</text>
+    <map latitude='{{latitude}}' longitude='{{atitude}}'></map>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
