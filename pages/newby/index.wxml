@@ -1,0 +1,22 @@
+<!--pages/newby/index.wxml-->
+<view class='chooseTitle'>
+<text>订制你的记忆</text>
+</view>
+<view class='chooseBlock'>
+  <button class='chooser_unselected'>娱乐</button>
+  <button class='chooser_unselected'>社会</button>
+  <button class='chooser_unselected'>社会</button>
+  <button class='chooser_unselected'>军事</button>
+  <button class='chooser_unselected'>娱乐</button>
+  <button class='chooser_unselected'>社会</button>
+  <button class='chooser_unselected'>社会</button>
+  <button class='chooser_unselected'>军事</button>
+  <button class='chooser_unselected'>游戏</button>
+</view>
+
+<view class='footer'>
+  <navigator url='/pages/index/index'>选好了</navigator>
+  <navigator url='/pages/index/index'>随便看看</navigator>
+</view>
+
+

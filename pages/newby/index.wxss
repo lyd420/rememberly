@@ -1,0 +1,26 @@
+/* pages/newby/index.wxss */
+view{
+  font-family: Helvetica Neue;
+}
+.chooseTitle{
+  margin: 30rpx 0rpx 30rpx 20rpx;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+}
+.chooseBlock{
+  margin-left: 20rpx;
+  width: 100%;
+}
+.chooser_unselected{
+  width: 20%;
+  height: 25px;
+  font-size: 10px;
+  border-style: none !important;
+  display: inline-block;
+  background-color: #B5B5B5 !important;
+  margin-right:20rpx;
+  color: #FFFFFF;
+}
+.chooser_unselected::after{
+  border: none;
+}
